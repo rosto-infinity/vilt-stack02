@@ -28,27 +28,19 @@
         </template>
     </nav>
 
-
-
-
-
-
-
-
-
-
 <h1 class="d">mmmmmmmmmmmmmmmmmmmmmmmmm</h1>
 </template>
 
 <script setup>
 import { Link } from '@inertiajs/vue3';
-
 defineProps({
     canLogin: {
         type: Boolean,
+        required: true
     },
     canRegister: {
         type: Boolean,
+        required: true
     },
 });
 </script>

@@ -1,11 +1,12 @@
 <template>
-    <FrontendLayout :canLogin="canLogin" :canRegister="canRegister">
-        <h1>Home page</h1>
-    </FrontendLayout>
+    
+    <Navbar :canLogin="canLogin" :canRegister="canRegister"/>
+  
+    <slot />
 </template>
 
 <script setup>
-import FrontendLayout from '@/Layouts/FrontendLayout.vue';
+import Navbar from '@/Components/Navbar.vue';
 defineProps({
     canLogin: {
         type: Boolean,
@@ -17,3 +18,5 @@ defineProps({
     },
 });
 </script>
+
+

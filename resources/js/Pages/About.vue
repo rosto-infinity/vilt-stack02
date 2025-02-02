@@ -1,15 +1,21 @@
 <template>
-    <div>
-About {{ title}}
-    </div>
+    <FrontendLayout :canLogin="canLogin" :canRegister="canRegister">
+        <h1>About page</h1>
+    </FrontendLayout>
 </template>
 
 <script setup>
+import FrontendLayout from '@/Layouts/FrontendLayout.vue';
+import { defineProps } from 'vue';
+
 defineProps({
-    title:String,
-})
+    canLogin: {
+        type: Boolean,
+        required: true
+    },
+    canRegister: {
+        type: Boolean,
+        required: true
+    },
+});
 </script>
-
-<style  scoped>
-
-</style>

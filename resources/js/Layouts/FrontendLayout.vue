@@ -7,7 +7,12 @@
 
 <script setup>
 import Navbar from '@/Components/Navbar.vue';
-defineProps({
+// import useHeads from '@/Composables/useHeads';
+
+// const { canLogin, canRegister } = useHeads();
+
+
+const props = defineProps({
     canLogin: {
         type: Boolean,
         required: true
@@ -17,6 +22,10 @@ defineProps({
         required: true
     },
 });
-</script>
 
+// Assurez-vous que ces valeurs sont définies correctement
+const canLogin = true; // ou false selon votre logique
+const canRegister = true; // ou false selon votre logique
+
+</script>
 

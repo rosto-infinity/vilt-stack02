@@ -5,10 +5,14 @@
 </template>
 
 <script setup>
-import FrontendLayout from '@/Layouts/FrontendLayout.vue';
-import { defineProps } from 'vue';
+// import useHeads from '@/Composables/useHeads';
+// import FrontendLayout from '@/Layouts/FrontendLayout.vue';
 
-defineProps({
+// const { canLogin, canRegister } = useHeads();
+
+
+import FrontendLayout from '@/Layouts/FrontendLayout.vue';
+const props = defineProps({
     canLogin: {
         type: Boolean,
         required: true
@@ -18,4 +22,8 @@ defineProps({
         required: true
     },
 });
+
+// Assurez-vous que ces valeurs sont définies correctement
+const canLogin = true; // ou false selon votre logique
+const canRegister = true; // ou false selon votre logique
 </script>

@@ -6,7 +6,13 @@
 
 <script setup>
 import FrontendLayout from '@/Layouts/FrontendLayout.vue';
-const props = defineProps({
+
+
+// import useAuth from '@/composables/useAuth';
+
+// const { canLogin, canRegister } = useAuth();
+
+ defineProps({
     canLogin: {
         type: Boolean,
         required: true
@@ -17,7 +23,7 @@ const props = defineProps({
     },
 });
 
-// Assurez-vous que ces valeurs sont définies correctement
-const canLogin = true; // ou false selon votre logique
-const canRegister = true; // ou false selon votre logique
+// // Assurez-vous que ces valeurs sont définies correctement
+// const canLogin = true; // ou false selon votre logique
+// const canRegister = true; // ou false selon votre logique
 </script>

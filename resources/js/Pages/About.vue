@@ -9,10 +9,8 @@
 // import FrontendLayout from '@/Layouts/FrontendLayout.vue';
 
 // const { canLogin, canRegister } = useHeads();
-
-
 import FrontendLayout from '@/Layouts/FrontendLayout.vue';
-const props = defineProps({
+ defineProps({
     canLogin: {
         type: Boolean,
         required: true
@@ -23,7 +21,7 @@ const props = defineProps({
     },
 });
 
-// Assurez-vous que ces valeurs sont définies correctement
-const canLogin = true; // ou false selon votre logique
-const canRegister = true; // ou false selon votre logique
+// // Assurez-vous que ces valeurs sont définies correctement
+// const canLogin = true; // ou false selon votre logique
+// const canRegister = true; // ou false selon votre logique
 </script>

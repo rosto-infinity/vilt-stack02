@@ -36,7 +36,7 @@ import { Link } from '@inertiajs/vue3';
 // import { usePage } from '@inertiajs/vue3';
 // const pageProps = usePage().props;
 // const { canLogin, canRegister } = useAuth(pageProps);
-const props = defineProps({
+ defineProps({
     canLogin: {
         type: Boolean,
         required: true
@@ -47,9 +47,6 @@ const props = defineProps({
     },
 });
 
-// Assurez-vous que ces valeurs sont définies correctement
-const canLogin = true; // ou false selon votre logique
-const canRegister = true; // ou false selon votre logique
 </script>
 
 

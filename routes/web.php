@@ -6,8 +6,8 @@ use Illuminate\Foundation\Application;
 use Illuminate\Support\Facades\Route;
 use Inertia\Inertia;
 
-Route::get('/', [FrontendController::class, 'index'])->name('home  ');
-Route::get('/about', [FrontendController::class, 'about'])->name('contact');
+Route::get('/', [FrontendController::class, 'index'])->name('home');
+Route::get('/about', [FrontendController::class, 'about'])->name('about');
 
 Route::get('/dashboard', function () {
     return Inertia::render('Dashboard');

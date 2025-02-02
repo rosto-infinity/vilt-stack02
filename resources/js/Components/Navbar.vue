@@ -1,7 +1,5 @@
 <template>
-   
-        <Navbar />
-        <nav v-if="canLogin" class="flex flex-1 justify-end bg-green-600 p-10 text-white">
+    <nav v-if="canLogin" class="flex flex-1 justify-end bg-green-600 p-10 text-white">
         <Link :href="route('home')" prefetch
             class="rounded-md px-3 py-2 text-white ring-1 ring-transparent transition hover:text-black/70 focus:outline-none focus-visible:ring-[#FF2D20] dark:text-white dark:hover:text-white/80 dark:focus-visible:ring-white">
         Home
@@ -31,15 +29,18 @@
     </nav>
 
 
-        <h1>Home page </h1>
-  
+
+
+
+
+
+
+
+
+<h1 class="d">mmmmmmmmmmmmmmmmmmmmmmmmm</h1>
 </template>
 
-
-
-
 <script setup>
-import Navbar from '@/Components/Navbar.vue';
 import { Link } from '@inertiajs/vue3';
 
 defineProps({
@@ -51,3 +52,5 @@ defineProps({
     },
 });
 </script>
+
+
